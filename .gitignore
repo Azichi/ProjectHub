@@ -1,0 +1,35 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+[Mm]emoryCaptures/
+[Ll]ogs/
+sysinfo.txt
+*.csproj
+*.sln
+*.userprefs
+
+# Visual Studio
+.vs/
+
+# IDEs
+.vscode/
+
+# Archives and binaries
+*.rar
+*.zip
+*.exe
+*.gif
+*.mp4
+*.weights
