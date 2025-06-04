@@ -4,7 +4,7 @@ Collection of small projects.
 
 ## Contents
 
-- **LightsOut** – Unity puzzle game with a pre-built archive.
+ - **LightsOut** – Unity 2D zombie shooter with a pre-built archive.
 - **RobotSafetySystem** – Unity scenes for robot safety experiments.
 - **SortifyPerceptionModule** – Python vision pipeline for detecting colored shapes using OpenCV and YOLO.
 
