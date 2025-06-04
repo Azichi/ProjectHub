@@ -1,0 +1,5 @@
+classes = 2
+train = /Users/azi/Desktop/Sortify/darknet/data/train.txt
+valid = /Users/azi/Desktop/Sortify/darknet/data/test.txt
+names = /Users/azi/Desktop/Sortify/darknet/data/obj.names
+backup = backup/

@@ -1,0 +1,9 @@
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0020.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0002.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0003.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0024.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0047.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0041.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0017.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0029.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0023.jpeg

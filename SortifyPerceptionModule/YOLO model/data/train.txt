@@ -1,0 +1,594 @@
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1786 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0003_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0002_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1811_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1855_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1809.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1796 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1854_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1730 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1794 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0029.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1769 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1848.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1805_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1986_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0035_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1987_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1790 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1798.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1976.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1741 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1999.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0005.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1963_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1771 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1962_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2006_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1731 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2007_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0042_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0043_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1864.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0047.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1830_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1960.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1825.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0013.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1883_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2004.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1816_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1817_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1852.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1779 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0030.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1866_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1805.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1884_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1764 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1885_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1754 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0025.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1764 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2012.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0009_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1844.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0008_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1808_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0009.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1729 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1853_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1829_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1754 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1738 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1995.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1737 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1778 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1778 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1887.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1785 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1748 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1868.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1829_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1861_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1860_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1891.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1746 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1787 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1847_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1969_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1829.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1983.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1991_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1990_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1982.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1777 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1890.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1858_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1891_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1751 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1769 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1886.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1842_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1869.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1843_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1885_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0014_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1994.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0015_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0008.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1738 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1782 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1845.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1727 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2013.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1812.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1739 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1817_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1744 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0024.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1804.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1746 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1735 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2011_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1780 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1803_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2010_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1748 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1853.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1879_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1974_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1756 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1975_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2005.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0012.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1788 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1795 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1961.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1735 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0046.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1728 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1796 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1848_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1873.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1849_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1855_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1888_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1841_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1893_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1892_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1801_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1800_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0004.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1784 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1977.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1998.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1793 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1729 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0020_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1860_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0021_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1799.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1849.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1770 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1876_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1877_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0028.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1808.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1734 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2009.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1744 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1789 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2002.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1737 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1854.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1731 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1996_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1804_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1747 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1777 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1788 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1803.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1777 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1757 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0013_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0023.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0012_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1810_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1723 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1740 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1845_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2014.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1844_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1842.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1831_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1993.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1794 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1881.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1882_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1773 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1732 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1973_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1796 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1972_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1878.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0019.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1750 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1825_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2016_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2017_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1985.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1858.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1783 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1741 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1873_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1809_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1723 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0019_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0018_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1806_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1819.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1807_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1785 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1867_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1970.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1871_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0003.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1846_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1979_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0027_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1978_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0026_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1862.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1780 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0041.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1852_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1966.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1989.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0015.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1792 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1852_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1853_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0014.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1780 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1884_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1988.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0004_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0040.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0005_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1875.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1744 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0032_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1981_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0033_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1863.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0002.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1786 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1859_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1890_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1888_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1971.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2001_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1802_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0044_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1790 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1878_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1818.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1964_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1727 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1965_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1825_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1782 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1859.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1816_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1984.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0018.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1772 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1883_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1882_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1811_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1879.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1810_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0038_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0039_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1880.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1772 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1750 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1992.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1733 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1858_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1859_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1854_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1732 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1843.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1737 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2015.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1793 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1771 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1755 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1875_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0022.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1802.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1798_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1861_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1799_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1855.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1866_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1867_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1791 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2003.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1987.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1736 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1755 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1757 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1826_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1739 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1728 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1890_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1891_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1745 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1788 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1883.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1998_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1848_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1999_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1991.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1881_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1747 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1735 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1802_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1803_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1747 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1729 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0023_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0022_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2016.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1869_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1778 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1817.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1769 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1875_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1794 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0021.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1783 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1801.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1799_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1856.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1807_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1808_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1809_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1851_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0017.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1992_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1993_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1821.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1964.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0043.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1876.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1792 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1860.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1841_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1734 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0001.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1781 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0017_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1845_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1756 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0016_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1972.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1750 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1787 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1864_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0038.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1728 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2012_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1771 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2013_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0029_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1977_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0028_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1976_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1795 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1784 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1731 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1779 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1753 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1739 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1887_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1886_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0039.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1757 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1801_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1797 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1973.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1820_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1797 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1861.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1893_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1789 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1877.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1887_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0042.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1862_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1785 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1863_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1820.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1965.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0016.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1755 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1745 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2001.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1738 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0001_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1862_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1857.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1730 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1770 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0035.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1856_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1857_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1740 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1818_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1800.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0020.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1816.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2017.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1876_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1985_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1984_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1734 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1841.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1960_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1961_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1990.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1786 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1868_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1857_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1869_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2005_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2004_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0041_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1882.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0040_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1791 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1843_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1779 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1764 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1821_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1986.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1820_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1969.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1880_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0011.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1881_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1781 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1745 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1827.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1792 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1962.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1988_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1727 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1849_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1989_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1880_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1812_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1759.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1793 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1781 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1866.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0007.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1831.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1974.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1827_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1798_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1958.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1806_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1812_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1733 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2009_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1868_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1864_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1773 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1981.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1851_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1850_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1756 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1893.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0007_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1959_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1844_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0006_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1958_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1818_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1885.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1819_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1850_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1773 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1982_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0030_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1983_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1748 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1978.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1772 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1871_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1846.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2002_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2010.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2003_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1753 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0046_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0047_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1730 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1811.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1966_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0027.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1790 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1807.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1826_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1741 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0032.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1736 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1827_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1787 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1850.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1754 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2006.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2007.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1800_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1770 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1851.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0033.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1806.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0026.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1805_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1804_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1753 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1810.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2011.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1723 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1789 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1847.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1886_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1733 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1996.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1873_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1979.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1782 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1751 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0024_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0025_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1884.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1732 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1821_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1892.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1795 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1892_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1751 1.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1784 2_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1877_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1791 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1995_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1994_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1959.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1740 1_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0010_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0011_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1863_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1783 2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1797 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1819_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1846_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1847_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1830.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1975.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1746 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1842_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0006.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1867.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1888.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1736 1_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1831_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1830_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1970_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1871.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1971_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1758 2_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/red_img0044.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1826.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1878_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1856_SES2.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1879_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_1963.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2015_aug.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/blue_img0010.jpeg
+/Users/azi/Desktop/Sortify/darknet/data/obj/IMG_2014_aug.jpeg

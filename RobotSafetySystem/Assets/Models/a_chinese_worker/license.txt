@@ -1,0 +1,11 @@
+Model Information:
+* title:	A Chinese Worker
+* source:	https://sketchfab.com/3d-models/a-chinese-worker-4d06ba24009349bc824ccd3f756c4444
+* author:	UsmanKhalid51 (https://sketchfab.com/UsmanKhalid51)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "A Chinese Worker" (https://sketchfab.com/3d-models/a-chinese-worker-4d06ba24009349bc824ccd3f756c4444) by UsmanKhalid51 (https://sketchfab.com/UsmanKhalid51) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
