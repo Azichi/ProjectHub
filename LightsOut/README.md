@@ -18,5 +18,3 @@ A 2D wave-based zombie shooter built in Unity. Includes dynamic AI, full player 
 - `Assets/` – Scripts, prefabs, scenes, art
 - `ProjectSettings/`, `Packages/` – Unity config
 - `release/` – Archived playable build
-
-> Use a proper `.gitignore` to exclude `Library/`, `Temp/`, `.vs/`, and other non-source files
