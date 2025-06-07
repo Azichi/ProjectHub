@@ -19,6 +19,8 @@ sysinfo.txt
 *.csproj
 *.sln
 *.userprefs
+*.htm
+UserSettings/
 
 # Visual Studio
 .vs/
