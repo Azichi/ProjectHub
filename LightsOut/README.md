@@ -1,8 +1,5 @@
 # LightsOut
 
-
-# Lights Out
-
 A 2D wave-based zombie shooter built in Unity. Includes dynamic AI, full player control system, and complete gameplay loop.
 
 ## Features
