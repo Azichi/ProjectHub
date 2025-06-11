@@ -72,15 +72,17 @@ SortifyPerceptionModule/
 ## Robustness Examples
 
 ![Occlusion test: blue ball 50% covered](media/occlusion2.png)
+
 *Robust detection even under major occlusion (blue ball at 50% coverage).*
 
 ![Occlusion test: red and blue balls partially overlapping](media/occlusion.jpg)
+
 *System with partial overlap, maintaining detection for distinct objects.*
 
 
 ## Detection & Decision Logic
 
-![System scoring and acceptance overlay](media/decision.png)  
+![System scoring and acceptance overlay](media/decision.png)
 *Live debug overlay shows HSV, shape, AI, depth, mask, and track passes. Final acceptance decision displayed for each detected object.*
 
 
