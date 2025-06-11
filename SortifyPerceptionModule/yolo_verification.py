@@ -63,7 +63,7 @@ def flat(out) -> List[np.ndarray]:
     return res
 
 
-def run_yolo_inference(frame_bgr, conf_thresh=0.25, iou_thresh=0.45, model_side=416, every_n_frames=1):
+def run_yolo_inference(frame_bgr, conf_thresh=0.10, iou_thresh=0.80, model_side=416, every_n_frames=2):
     """
     Run YOLO detection on the image and return bounding boxes.
     """
@@ -136,7 +136,7 @@ def display_yolo_on_camera_feed(frame_bgr: np.ndarray, detections: List[Dict[str
     return frame_bgr
 
 
-if __name__ == "__main__":  # pragma: no cover
+if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 2:

@@ -168,7 +168,6 @@ class SquareDetector:
             out.append({"cx": cx, "cy": cy, "r": r, "w": w, "h": h, "angle": angle})
         return out
 
-# --- replace the old “FullRectangleDetector” block and its registration with this ---
 
 class RectangleDetector:
     def detect(self, mask: np.ndarray, p: dict) -> List[Dict[str, Any]]:

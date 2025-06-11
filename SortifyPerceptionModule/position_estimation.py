@@ -10,26 +10,22 @@ from config import CAMERA_LEFT_MM, CAMERA_ABOVE_BASE_MM
 from typing import Tuple, Optional, Dict
 import cv2
 import numpy as np
+
+import math
+import numpy as np
+import math
+from typing import Tuple
 from config import (
     MASK_OVERLAP_OK,
     DEPTH_MIN_MM,
     DEPTH_MAX_MM,
     DEPTH_OFFSET_MM,
-    #CAMERA_ABOVE_BASE_MM,
-    #CAMERA_LEFT_MM
+    CAMERA_LEFT_MM,
+    CAMERA_FORAWRD_MM,
+    CAMERA_ABOVE_BASE_MM,
+    TILT_DEGREES,
 )
-#from config import TILT_CORRECTION_DEGREES
-import math
 
-import numpy as np
-import math
-from typing import Tuple
-
-# CAMERA SETTINGS — FILL IN BASED ON YOUR SETUP
-CAMERA_LEFT_MM = 185.0           # how far camera is from robot center (left-right)
-CAMERA_FORWARD_MM = 0.0          # how far camera is in front of robot base
-CAMERA_ABOVE_BASE_MM = 195.0     # height of camera above robot base
-TILT_DEGREES = 27.5             # camera tilt downward (negative = looking down)
 
 def get_rotation_matrix_x(degrees: float) -> np.ndarray:
     angle = math.radians(degrees)
@@ -67,13 +63,6 @@ class PositionEstimator:
         z_r = CAMERA_ABOVE_BASE_MM - point_rotated[2, 0]
 
         return x_r, y_r, z_r
-
-
-
-
-
-
-
 
 
     @staticmethod

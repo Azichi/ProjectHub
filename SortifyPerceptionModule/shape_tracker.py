@@ -19,9 +19,7 @@ from scipy.optimize import linear_sum_assignment
 
 __all__ = ["ShapeTracker", "ShapeTrack"]
 
-# ──────────────────────────────────────────────────────────────────────────────
 # Data structures
-# ──────────────────────────────────────────────────────────────────────────────
 
 @dataclass
 class ShapeTrack:
@@ -36,9 +34,7 @@ class ShapeTrack:
     kf: Optional[cv2.KalmanFilter] = field(default=None, repr=False)
 
 
-# ──────────────────────────────────────────────────────────────────────────────
 # Utils
-# ──────────────────────────────────────────────────────────────────────────────
 
 class RobustTimeoutError(Exception):
     """Raised when an external call exceeds permitted duration."""
@@ -72,29 +68,25 @@ def robust_call(fn, *args, timeout: float = 2.0, retries: int = 2, **kwargs):
     )
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+
 # Tracker
-# ──────────────────────────────────────────────────────────────────────────────
 
 class ShapeTracker:
     id_counter: int = 0
 
-    # constants governing stricter behaviour ----------------------------------
+    # constants for behaviour
     _LOST_BONUS_CAP = 5   # frames – limits how far the radius can inflate
     _MAX_LOST_CLAMP = 60  # frames – global upper bound for slider
 
-    # -------------------------------------------------------------------------
     def __init__(self) -> None:
         self.tracks: Dict[str, List[ShapeTrack]] = {}
         self.candidates: Dict[str, List[Dict[str, Any]]] = {}
 
-    # -------------------------------------------------------------------------
     @classmethod
     def next_id(cls) -> int:
         cls.id_counter += 1
         return cls.id_counter
 
-    # -------------------------------------------------------------------------
     @staticmethod
     def validate_detection(det: Dict[str, Any]) -> None:
         if not isinstance(det, dict):
@@ -102,7 +94,6 @@ class ShapeTracker:
         if not set(det).intersection({"x", "y", "z", "cx", "cy"}):
             raise ValueError(f"Detection missing position: {det}")
 
-    # -------------------------------------------------------------------------
     @staticmethod
     def pos_get(det: Dict[str, Any]) -> Tuple[float, float, float]:
         x = det.get("x", det.get("cx", 0.0))
@@ -110,14 +101,12 @@ class ShapeTracker:
         z = det.get("z", 0.0)
         return float(x), float(y), float(z)
 
-    # -------------------------------------------------------------------------
     @staticmethod
     def track_distance(tr: ShapeTrack, det: Dict[str, Any]) -> float:
         tx, ty, tz = ShapeTracker.pos_get(tr.data)
         dx, dy, dz = ShapeTracker.pos_get(det)
         return float(np.sqrt((tx - dx) ** 2 + (ty - dy) ** 2 + (tz - dz) ** 2))
 
-    # -------------------------------------------------------------------------
     @staticmethod
     def init_kf(det: Dict[str, Any], q2d: float, r2d: float, q3d: float, r3d: float) -> cv2.KalmanFilter:
         """Create a Kalman filter matching the dimensionality of *det*."""
@@ -156,16 +145,12 @@ class ShapeTracker:
             ], dtype=np.float32)
         return kf
 
-    # -------------------------------------------------------------------------
     def clear(self) -> None:
         self.tracks.clear()
         self.candidates.clear()
         ShapeTracker.id_counter = 0
 
-    # ────────────────────────────────────────────────────────────────────────
     # MAIN TRACKING METHOD
-    # ────────────────────────────────────────────────────────────────────────
-
     def track(
         self,
         shape: str,
@@ -176,11 +161,11 @@ class ShapeTracker:
         """Update tracks for (shape, color) and return current visible tracks."""
         key = f"{shape}_{color}"
 
-        # 1. Validation --------------------------------------------------------
+        # 1. Validation
         for det in detections:
             self.validate_detection(det)
 
-        # 2. Extract runtime parameters ---------------------------------------
+        # 2. Extract runtime parameters
         alpha = float(params.get("tr_alpha", 5)) / 100.0
         base_valid = float(params.get("match_dist", 1500))
         max_lost = int(params.get("max_lost", 30))
@@ -196,10 +181,10 @@ class ShapeTracker:
         if alpha < 0 or not (0 < base_valid < 50000):
             raise ValueError("Unreasonable parameters for alpha or match_dist.")
 
-        # clamp unrealistically large lost window
+        # clamp lost window
         max_lost = max(1, min(max_lost, self._MAX_LOST_CLAMP))
 
-        # 3. Prep Kalman noise matrices ---------------------------------------
+        # 3. Kalman noise matrices
         tracks: List[ShapeTrack] = self.tracks.get(key, [])
         for tr in tracks:
             if tr.kf is None:
@@ -220,7 +205,7 @@ class ShapeTracker:
                 tr.vx, tr.vy = float(pred[2]), float(pred[3])
                 tr.vz = 0.0
 
-        # 4. Hungarian matching -----------------------------------------------
+        # 4. Hungarian matching
         matched_t, matched_d = set(), set()
         if tracks and detections and linear_sum_assignment is not None:
             m, n = len(tracks), len(detections)
@@ -230,7 +215,7 @@ class ShapeTracker:
                 adapt_th = (
                     base_valid
                     + speed_gain * np.linalg.norm([tr.vx, tr.vy, tr.vz])
-                    + lost_gain * min(tr.lost, self._LOST_BONUS_CAP)  # capped
+                    + lost_gain * min(tr.lost, self._LOST_BONUS_CAP)
                 )
                 for di, det in enumerate(detections):
                     d = self.track_distance(tr, det)
@@ -243,7 +228,7 @@ class ShapeTracker:
                 tr = tracks[ti]
                 det = detections[di]
 
-                # Kalman correction ----------------------------------------
+                # Kalman correction
                 meas = []
                 for k in ("x", "y", "z"):
                     if k in det:
@@ -256,7 +241,7 @@ class ShapeTracker:
                 if tr.kf is not None and meas.size == tr.kf.measurementMatrix.shape[0]:
                     _ = robust_call(tr.kf.correct, meas, timeout=1.5)
 
-                # Copy/update data -----------------------------------------
+                # Copy/update data
                 for k, v in det.items():
                     if k in ("x", "y", "z", "cx", "cy"):
                         tr.data[k] = v
@@ -269,18 +254,18 @@ class ShapeTracker:
                 if det.get("depth_mask_valid", False):
                     tr.stable_age += 1
                 else:
-                    tr.stable_age = 0  # failed validity resets consecutive counter
+                    tr.stable_age = 0
                 tr.lost = 0
                 matched_t.add(ti)
                 matched_d.add(di)
 
-        # 5. Update lost counters / reset maturity -----------------------------
+        # 5. Update lost counters / reset maturity
         for ti, tr in enumerate(tracks):
             if ti not in matched_t:
                 tr.lost += 1
                 tr.stable_age = 0  # maturity evaporates when object not seen
 
-        # 6. Spawn tracks from candidates --------------------------------------
+        # 6. Spawn tracks from candidates
         cands = self.candidates.get(key, [])
         new_cands: List[Dict[str, Any]] = []
         for di, det in enumerate(detections):
@@ -309,11 +294,11 @@ class ShapeTracker:
             else:
                 updated_cands.append(cand)
 
-        # 7. Prune old tracks --------------------------------------------------
+        # 7. Prune old tracks
         self.candidates[key] = updated_cands
         self.tracks[key] = [tr for tr in tracks if tr.lost <= max_lost]
 
-        # 8. Build output list (visible + mature) ------------------------------
+        # 8. Build output list
         results: List[Dict[str, Any]] = []
         for tr in self.tracks[key]:
             if tr.lost == 0 and tr.stable_age >= min_stable_age:

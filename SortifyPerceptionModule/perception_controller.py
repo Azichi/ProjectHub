@@ -6,25 +6,9 @@ Author: Azi Sami (2025)
 """
 from typing import List, Dict, Tuple
 import time, math, cv2, numpy as np
-import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-import socket
-UDP_IP = "127.0.0.1"     # localhost
-UDP_PORT = 5005
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-UDP_IP2 = "127.0.0.1"
-UDP_PORT2 = 5006
-sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock2.bind((UDP_IP2, UDP_PORT2))
-
-BUFFER_SIZE = 65535
-
 
 from debug_visualization import draw_scoring_overlay
 from position_estimation import transform_camera_to_robot, estimate_position
-#from hardware import DepthAICamera
 from preprocessing import preprocess                        
 from detection import detect_objects, DetectColor
 from scoring_controller import DecisionResult, merge_detection_info
@@ -39,7 +23,7 @@ from config import (
     SLIDER_CONFIG, TRACKBAR_WINDOW, TRACK_TARGETS, ACTIVE_GROUPS,
     LOGGING_TOGGLE_KEY, LOGGING_MAX_FRAMES_DEFAULT,
     DEPTH_MIN_MM, DEPTH_MAX_MM, GROUND_TRUTH_POS,
-    USE_GUI, USE_TRACKBARS, ENABLE_YOLO
+    USE_GUI, USE_TRACKBARS, ENABLE_YOLO, MODE, DRAW_DETECTIONS, DRAW_SCORING, DEBUG_LAYOUT
 )
 
 DetectionData = Dict[str, float]
@@ -49,20 +33,23 @@ TrackedOutput = Dict[str, object]
 
 class PerceptionController:
     """
-    Runs the vision pipeline and sends data to the robot.
+    Runs the vision pipeline based on selected mode.
     """
-
     def __init__(self, node_name: str = "perception_controller") -> None:
-        self.ros = ROSInterface(node_name)
-        #self.camera = DepthAICamera(CAMERA_WIDTH, CAMERA_HEIGHT, CAMERA_FPS)
-        #self.video = cv2.VideoCapture("test_video")
-        #self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
-        #self.video = cv2.VideoCapture("test_vest2.mp4")
-        #if not self.video.isOpened():
-        #    raise FileNotFoundError("test_video.mp4 not found or failed to open.")
+        if MODE == "sortify":
+            from hardware import DepthAICamera
+            self.camera = DepthAICamera(CAMERA_WIDTH, CAMERA_HEIGHT, CAMERA_FPS)
+            self.ros = ROSInterface(node_name)
+        elif MODE == "demo":
+            self.video = cv2.VideoCapture(1)  # Webcam
+        elif MODE == "safety":
+            import socket
+            self.udp_ip = "127.0.0.1"
+            self.udp_port2 = 5006
+            self.udp_sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            self.udp_sock2.bind((self.udp_ip, self.udp_port2))
 
-
-
+        self.yolo_verified_buffer = [] 
         self._fx = self._fy = self._cx0 = self._cy0 = 0.0
         self._prev_focus = -1
         self.trackers: Dict[Tuple[str, str], ShapeTracker] = {
@@ -78,21 +65,55 @@ class PerceptionController:
         """
         if USE_GUI and USE_TRACKBARS:
             cv2.namedWindow(TRACKBAR_WINDOW, cv2.WINDOW_NORMAL)
-            cv2.resizeWindow(TRACKBAR_WINDOW, 300, 300)
             create_trackbars(SLIDER_CONFIG, groups=ACTIVE_GROUPS)
         for tr in self.trackers.values():
             tr.clear()
         ShapeTracker.id_counter = 0
-        #self.camera.start()
-        #self._fx, self._fy, self._cx0, self._cy0 = self.camera.get_intrinsics()
+        if MODE == "sortify":
+            self.camera.start()
+            self._fx, self._fy, self._cx0, self._cy0 = self.camera.get_intrinsics()
+    
+    def send_output(self, shape, color, data, accepted):
+        if MODE == "sortify":
+            if self.ros and all(k in data for k in ("x_mm", "y_mm", "z_mm")):
+                xr, yr, zr = transform_camera_to_robot(data["x_mm"], data["y_mm"], data["z_mm"])
+                self.ros.publish(shape, color, data.get("track_id", 255), xr, yr, zr)
+        elif MODE == "safety":
+            import socket
+            vest_detected = shape == "rectangle" and color == "neon_yellow" and accepted
+            msg = b"1" if vest_detected else b"0"
+            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            sock.sendto(msg, ("127.0.0.1", 5005))
+            sock.close()
+        # MODE == "demo" → no output
 
     def get_video_frame(self):
-        ret, frame = self.video.read()
-        if not ret:
-            self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
+        if MODE == "sortify":
+            return self.camera.get_latest_frames()
+        elif MODE == "demo":
             ret, frame = self.video.read()
-        return frame if ret else None
+            if not ret:
+                return None, None
+            depth_dummy = np.zeros((frame.shape[0], frame.shape[1]), dtype=np.uint8)
+            return frame, depth_dummy
+        elif MODE == "safety":
+            data, _ = self.udp_sock2.recvfrom(65535)
+            np_arr = np.frombuffer(data, dtype=np.uint8)
+            frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+            depth_dummy = np.zeros_like(frame[:, :, 0])
+            return frame, depth_dummy
+        
+    def compute_iou(self, boxA, boxB):
+        xA = max(boxA[0], boxB[0])
+        yA = max(boxA[1], boxB[1])
+        xB = min(boxA[2], boxB[2])
+        yB = min(boxA[3], boxB[3])
 
+        interArea = max(0, xB - xA) * max(0, yB - yA)
+        boxAArea = (boxA[2] - boxA[0]) * (boxA[3] - boxA[1])
+        boxBArea = (boxB[2] - boxB[0]) * (boxB[3] - boxB[1])
+        iou = interArea / float(boxAArea + boxBArea - interArea + 1e-6)
+        return iou
 
 
 
@@ -101,26 +122,20 @@ class PerceptionController:
         fps_timer = time.time()
         fps_count = 0
         fps_avg = 0.0
+
         while True:
             # 1. Get frames
-            data, addr = sock2.recvfrom(BUFFER_SIZE)
-            np_arr = np.frombuffer(data, dtype=np.uint8)
-            color_frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
-
-            if color_frame is None:
-                print("End of video or failed to read frame.")
-                break  # or return, depending on how you want to exit
-
-            depth_frame = np.zeros_like(color_frame[:, :, 0])  # dummy depth
+            color_frame, depth_frame = self.get_video_frame()
+            if color_frame is None or depth_frame is None:
+                raise RuntimeError("Camera returned None frame.")
 
 
-            #in_video, in_depth = self.camera.get_latest_frames()
-            self.global_frame_counter += 1
-            params = get_runtime_params()
-            #color_frame, depth_frame = in_video.getCvFrame(), in_depth.getFrame()
-            #if color_frame is None or depth_frame is None:
-            #    raise RuntimeError("Camera returned None frame.")
-            #color_frame, depth_frame = map(lambda f: cv2.flip(f, -1), (color_frame, depth_frame))
+            if self.global_frame_counter % 3 == 0:
+                self.cached_params = get_runtime_params()
+            params = self.cached_params
+
+            if color_frame is None or depth_frame is None:
+                raise RuntimeError("Camera returned None frame.")
             base_image = color_frame.copy()
 
             # 2. Preprocess
@@ -136,21 +151,8 @@ class PerceptionController:
             detections_raw: List[DetectionObj] = detect_objects(processed, params)
             detections_post: List[DetectionObj] = []
 
-            # 4. AI check (optional) – full frame only for overlay
-            ai_confirmed = False
-            overlay_with_yolo = base_image.copy()
-            if ENABLE_YOLO:
-                detections_ai = run_yolo_inference(base_image)
-                ai_confirmed = bool(detections_ai)
-                for det in detections_ai:
-                    l, t, r, b = det["left"], det["top"], det["right"], det["bottom"]
-                    cv2.rectangle(overlay_with_yolo, (l, t), (r, b), (0, 255, 0), 2)
-                    cv2.putText(
-                        overlay_with_yolo, f'{det["label"]} {det["confidence"]:.2f}',
-                        (l, t - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2
-                    )
 
-            # 5. Position/filter
+            # 4. Position/filter
             for obj in detections_raw:
                 data2d = obj["data"]
                 pos3d = estimate_position(
@@ -163,94 +165,127 @@ class PerceptionController:
                 obj["data"] = merged
                 detections_post.append(obj)
 
+            # AI model (optional)
+            overlay_with_yolo = base_image.copy()
+            detections_ai = run_yolo_inference(base_image) if ENABLE_YOLO else []
 
-            # 6. Run YOLO per detection_post
+            verified_this_frame: list[dict] = []
+            matched_ai = [False] * len(detections_ai)          
+
             for obj in detections_post:
+                if not (ENABLE_YOLO and obj.get("shape")):
+                    obj["data"]["ai_valid"] = False
+                    continue
+
                 d = obj["data"]
-                if ENABLE_YOLO:
-                    cx, cy, r = map(int, map(round, (d["cx"], d["cy"], d.get("r", 40))))
-                    r_pad = max(20, int(r * 1.4))
-                    x1 = max(0, cx - r_pad)
-                    y1 = max(0, cy - r_pad)
-                    x2 = min(base_image.shape[1], cx + r_pad)
-                    y2 = min(base_image.shape[0], cy + r_pad)
-                    crop = base_image[y1:y2, x1:x2]
-                    d["ai_valid"] = bool(run_yolo_inference(crop))
+                cx, cy, r = int(d["cx"]), int(d["cy"]), int(d.get("r", 40))
+                shape_box = (
+                    max(0, cx - r), max(0, cy - r),
+                    min(base_image.shape[1], cx + r), min(base_image.shape[0], cy + r)
+                )
+
+                best_iou, best_idx = 0.0, -1
+                for idx, det in enumerate(detections_ai):
+                    yolo_box = (det["left"], det["top"], det["right"], det["bottom"])
+                    iou = self.compute_iou(shape_box, yolo_box)
+                    if iou > best_iou:
+                        best_iou, best_idx = iou, idx
+
+                if best_iou > 0.15:
+                    matched_ai[best_idx] = True       
+                    d["ai_valid"] = True
                 else:
                     d["ai_valid"] = False
-                d["tracker_valid"] = False
-            
-            """
-            # 7. Track everything  (complete, working block)
-            dets_by_type: Dict[Tuple[str, str], List[DetectionData]] = {}
-            for obj in detections_post:                         # ← keep these two lines
-                dets_by_type.setdefault((obj["shape"], obj["color"]), []).append(obj["data"])
 
-            all_tracked: List[TrackedOutput] = []
-            for (shape, color), det_list in dets_by_type.items():
-                tracker = self.trackers.setdefault((shape, color), ShapeTracker())
-                for t in tracker.track(shape, color, det_list, params):
-                    t["tracker_valid"] = True                   # every returned track is mature
-                    all_tracked.append({"shape": shape, "color": color, "data": t})
+            for idx, det in enumerate(detections_ai):
+                if not matched_ai[idx]:
+                    continue                         
+                verified_this_frame.append({
+                    "box": (det["left"], det["top"], det["right"], det["bottom"]),
+                    "label": det["label"],
+                    "conf": det["confidence"],
+                    "ttl": 2,
+                    "shape_id": idx,                
+                })
 
+            next_buf = []
+            for e in self.yolo_verified_buffer:
+                e["ttl"] -= 1
+                if e["ttl"] > 0:
+                    next_buf.append(e)
+            self.yolo_verified_buffer = next_buf
 
-            # 8. Scoring
-            tracked: List[TrackedOutput] = []
-            for det in all_tracked:
-                d = det["data"]
-                decision = DecisionResult.get_decision(d)
-                d["score"] = getattr(decision, "score", None)
-                d["accepted"] = decision.accepted
-                if decision.accepted:
-                    shape, color = det["shape"], det["color"]
-                    if (shape, color) in GROUND_TRUTH_POS:
-                        gx, gy, gz = GROUND_TRUTH_POS[(shape, color)]
-                        d["pos_err_mm"] = math.dist((d["x_mm"], d["y_mm"], d["z_mm"]), (gx, gy, gz))
-                    else:
-                        d["pos_err_mm"] = None
-                    tracked.append(det)
-                    """
-            
-            # 7–8. Stateless passthrough
-            tracked: List[TrackedOutput] = []
-            for obj in detections_post:
-                d = obj["data"]
-                d["accepted"] = True
-                d["score"] = 999  # optional dummy value
-                d["tracker_valid"] = False
-                tracked.append(obj)
+            for v in verified_this_frame:
+                hit = next((e for e in self.yolo_verified_buffer
+                            if self.compute_iou(e["box"], v["box"]) > 0.2), None)
+                if hit:
+                    hit.update(box=v["box"], label=v["label"], conf=v["conf"], ttl=2)
+                else:
+                    self.yolo_verified_buffer.append(v)
+
+            for e in self.yolo_verified_buffer:
+                l, t, r, b = e["box"]
+                cv2.rectangle(overlay_with_yolo, (l, t), (r, b), (0, 255, 0), 2)
+                cv2.putText(
+                    overlay_with_yolo,
+                    f'{e["label"]} {e["conf"]:.2f}',
+                    (l, t - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2
+                )
 
 
+            # 6. Track everything
+            if MODE in ("sortify", "demo"):
+                dets_by_type: Dict[Tuple[str, str], List[DetectionData]] = {}
+                for obj in detections_post:
+                    dets_by_type.setdefault((obj["shape"], obj["color"]), []).append(obj["data"])
 
-            # 9. Publish
-            for det in tracked:
-                d = det["data"]
-                if not all(k in d for k in ("x_mm", "y_mm", "z_mm")):
-                    continue
-                xr, yr, zr = transform_camera_to_robot(d["x_mm"], d["y_mm"], d["z_mm"])
-                self.ros.publish(det["shape"], det["color"], d.get("track_id", 255), xr, yr, zr)
+                all_tracked: List[TrackedOutput] = []
+                for (shape, color), det_list in dets_by_type.items():
+                    tracker = self.trackers.setdefault((shape, color), ShapeTracker())
+                    for t in tracker.track(shape, color, det_list, params):
+                        t["tracker_valid"] = True
+                        all_tracked.append({"shape": shape, "color": color, "data": t})
 
-            # Vest detected?
-            vest_detected = any(
-                det["shape"] == "rectangle" and det["color"] == "neon_yellow"
-                for det in tracked
-            )
+                # 7. Scoring
+                tracked: List[TrackedOutput] = []
+                for det in all_tracked:
+                    d = det["data"]
+                    decision = DecisionResult.get_decision(d)
+                    d["score"] = getattr(decision, "score", None)
+                    d["accepted"] = decision.accepted
+                    if decision.accepted:
+                        shape, color = det["shape"], det["color"]
+                        if (shape, color) in GROUND_TRUTH_POS:
+                            gx, gy, gz = GROUND_TRUTH_POS[(shape, color)]
+                            d["pos_err_mm"] = math.dist((d["x_mm"], d["y_mm"], d["z_mm"]), (gx, gy, gz))
+                        else:
+                            d["pos_err_mm"] = None
+                        tracked.append(det)
 
-            # Send to UDP_IP and Port if detected
-            msg = b"1" if vest_detected else b"0"
-            sock.sendto(msg, (UDP_IP, UDP_PORT))
+            # 6–7. Stateless passthrough
+            elif MODE == "safety":
+                tracked: List[TrackedOutput] = []
+                for obj in detections_post:
+                    d = obj["data"]
+                    d["accepted"] = True
+                    d["score"] = 999  # dummy
+                    d["tracker_valid"] = False
+                    tracked.append(obj)
 
-            
-            # 10. Visualization
-            #np_arr = np.frombuffer(data, dtype=np.uint8)
-            #overlay = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
-            #img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+            # 8. Publish
+            if MODE == "sortify":
+                for det in tracked:
+                    d = det["data"]
+                    if not all(k in d for k in ("x_mm", "y_mm", "z_mm")):
+                        continue
+                    self.send_output(det["shape"], det["color"], d, accepted=d["accepted"])
 
+            # 9. Visualization
             overlay = base_image.copy()
-            #draw_detections(img, tracked)
-            #draw_scoring_overlay(img,tracked)
-            draw_detections(overlay, tracked)
-            draw_scoring_overlay(overlay, tracked)
+            if DRAW_DETECTIONS:
+                draw_detections(overlay, tracked)
+            if DRAW_SCORING:
+                draw_scoring_overlay(overlay, tracked)
 
 
             fps_count += 1
@@ -263,18 +298,16 @@ class PerceptionController:
                                 * 255.0 / (DEPTH_MAX_MM - DEPTH_MIN_MM), 0, 255).astype(np.uint8)
             depth_vis = cv2.applyColorMap(depth_norm, cv2.COLORMAP_JET)
             hsv = cv2.cvtColor(processed, cv2.COLOR_BGR2HSV)
+            
             debug_img = build_debug_view(
                 DetectColor.red(hsv, params),
                 DetectColor.blue(hsv, params),
-                DetectColor.neon_yellow(hsv, params),
-                #img,
+                overlay_with_yolo,
                 overlay
-            )
-            debug_img = cv2.resize(debug_img, (0, 0), fx=0.5, fy=0.5)
+            ) if DEBUG_LAYOUT == "2x2" else np.vstack([overlay_with_yolo, overlay])
 
 
-
-            # 11. Logging
+            # 10. Logging
             if self.kpi_logger and self.logging_start_frame is not None:
                 rel = self.global_frame_counter - self.logging_start_frame
                 if rel < LOGGING_MAX_FRAMES_DEFAULT:
@@ -286,43 +319,30 @@ class PerceptionController:
                     self.kpi_logger = self.logging_start_frame = None
                     console_logger.info("Logging STOPPED")
 
-
-            #if self.video.isOpened():
-                #_, preview = self.video.read()
-                #if preview is not None:
-                    #cv2.imshow("Video Preview", preview)
-
-
-            # 12. Show/debug/log
+            # 11. Show/debug/log
             if USE_GUI:
-                foc = int(params.get("focus", 0))
-                #if foc != self._prev_focus:
-                    #self.camera.set_focus(foc)
-                    #self._prev_focus = foc
-                #cv2.imshow("Test Image", self.image)
+                if MODE == "sortify":
+                    foc = int(params.get("focus", 0))
+                    if foc != self._prev_focus:
+                        self.camera.set_focus(foc)
+                        self._prev_focus = foc
+                        
                 cv2.imshow("Debug View", debug_img)
-
-
-
-                #cv2.resizeWindow("Debug View", 640, 360)
-
-
-                #cv2.imshow("Unity View", img)
-
-
-
                 if self.handle_key_press(cv2.waitKey(1) & 0xFF, base_image):
                     break
 
         cv2.destroyAllWindows()
-        #self.camera.shutdown()
-        self.video.release()
-        self.ros.destroy()
-        ros_shutdown()
+        if MODE == "sortify" and hasattr(self, "ros"):
+            self.ros.destroy()
+            ros_shutdown()
+        elif MODE == "demo" and hasattr(self, "video"):
+            self.video.release()
+        elif MODE == "safety" and hasattr(self, "udp_sock2"):
+            self.udp_sock2.close()
 
 
+    # Button presses
     def handle_key_press(self, key: int, frame: np.ndarray) -> bool:
-        # Button presses
         if key in (ord("s"), ord("p"), ord("q")): return True
         elif key == ord("r"):
             for n, v in SLIDER_CONFIG.items():

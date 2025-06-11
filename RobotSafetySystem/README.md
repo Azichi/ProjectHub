@@ -19,4 +19,9 @@ Unity project for simulating industrial robot safety scenarios using visual dete
 - `Assets/` – Simulation scenes, scripts, robot models
 - `Packages/`, `ProjectSettings/` – Unity config files
 
+## Demo
+
+https://youtu.be/Jszq-5aXHnU
+
 > Perception code lives in the [SortifyPerceptionModule](../SortifyPerceptionModule) repo
+

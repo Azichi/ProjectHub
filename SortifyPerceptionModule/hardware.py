@@ -1,9 +1,8 @@
 """
 hardware.py
 
-Initializes and controls the DepthAI camera.
+Initializes and controls DepthAI camera.
 Handles all frame capture, ISP controls, focus, and calibration.
-No detection, tracking, or data publishing is implemented here.
 """
 
 

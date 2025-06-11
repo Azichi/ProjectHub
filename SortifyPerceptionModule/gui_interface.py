@@ -2,7 +2,6 @@
 gui_interface.py
 
 Handles creation of OpenCV trackbars and reading live parameter values.
-Allows the whole pipeline to run headless if GUI is off.
 """
 
 from __future__ import annotations
@@ -25,7 +24,6 @@ GROUPS_FALLBACK = ACTIVE_GROUPS
 
 
 def noop(_: int) -> None:
-    # Placeholder for OpenCV trackbar callback
     ...
 
 

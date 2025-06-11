@@ -2,6 +2,10 @@
 
 A 2D wave-based zombie shooter built in Unity. Includes dynamic AI, full player control system, and complete gameplay loop.
 
+## Demo
+
+https://youtu.be/xHVbZc6AC74
+
 ## Features
 - Wave system with dynamic enemy spawning and difficulty scaling
 - Four enemy types with distinct AI behavior and movement
