@@ -83,6 +83,7 @@ SortifyPerceptionModule/
 ## Detection & Decision Logic
 
 ![System scoring and acceptance overlay](media/decision.png)
+
 *Live debug overlay shows HSV, shape, AI, depth, mask, and track passes. Final acceptance decision displayed for each detected object.*
 
 
