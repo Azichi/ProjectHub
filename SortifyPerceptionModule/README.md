@@ -71,10 +71,10 @@ SortifyPerceptionModule/
 
 ## Robustness Examples
 
-![Occlusion test: blue ball 50% covered](media/occlusion2.jpg)
+![Occlusion test: blue ball 50% covered](media/occlusion2.png)
 *Robust detection even under major occlusion (blue ball at 50% coverage).*
 
-![Occlusion test: red and blue balls partially overlapping](media/occlusion.png)
+![Occlusion test: red and blue balls partially overlapping](media/occlusion.jpg)
 *System with partial overlap, maintaining detection for distinct objects.*
 
 
