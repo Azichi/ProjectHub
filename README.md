@@ -1,10 +1,14 @@
 # ProjectHub
 
-A curated collection of student-level robotics and computer vision projects. All code is modular and self-contained, with demos and setup instructions.
+A collection of student projects. All code is modular and self-contained, with demos and setup instructions.
 
 ---
 
 ## Contents
+
+- **[SortifyPerceptionModule](SortifyPerceptionModule/)**  
+  Python-based computer vision module using OpenCV and YOLOv4-tiny to detect shapes and colors in real time. Supports ROS2 and Unity via UDP.  
+  ▶️ [Vision demo](https://youtu.be/h6cor_CGYTA)
 
 - **[LightsOut](LightsOut/)**  
   Unity 2D zombie shooter with scoring system and multiple AI behaviors.  
@@ -14,9 +18,6 @@ A curated collection of student-level robotics and computer vision projects. All
   Unity-based safety simulation with real-time vest detection via UDP from a Python vision module.  
   ▶️ [System demo](https://youtu.be/Jszq-5aXHnU)
 
-- **[SortifyPerceptionModule](SortifyPerceptionModule/)**  
-  Python-based computer vision module using OpenCV and YOLOv4-tiny to detect shapes and colors in real time. Supports ROS2 and Unity via UDP.  
-  ▶️ [Vision demo](https://youtu.be/h6cor_CGYTA)
 
 Each folder contains a full README with technical breakdowns and usage instructions.
 
